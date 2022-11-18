@@ -1,4 +1,4 @@
 # Szibaszyn.github.io
 
 
-i want to stole my school website
+Hi, i want to stole my school website
