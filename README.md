@@ -1,4 +1,4 @@
 # Szibaszyn.github.io
 
 
-Hi, I'm omly make my website!
+Hi, I'm only make my website!
