@@ -6,17 +6,6 @@
 	<head>
 		<title>Szibaszyn's Page</title>
 		<meta charset="UTF-8">
-		<script>
-		oncontextmenu = (e) => {
-		e.preventDefault()
-		let menu = document.createElement("div")
-		menu.id = "ctxmenu"
-		menu.style = `top:${e.pageY-10}px;left:${e.pageX-40}px`
-		menu.onmouseleave = () => ctxmenu.outerHTML = ''
-		menu.innerHTML = "<p>Witam na</p><p>mojej stronie</p><p>------------------------</p><p onclick='alert(`Witam!`)'>=>Siema...</p>"
-		document.body.appendChild(menu)
-}
-		</script>
 		<style>
 		h1
 		{
@@ -44,69 +33,16 @@
 			color: #ffffff;
 			padding: 5px
 		}
-		span
-		{
-			padding: 5px;
-		}
-		p.black
-		{
-			color: #000000;
-		}
-		p.pink
-		{
-			color: #D15ACD;
-		}
-		p.blue
-		{
-			color: #0011ff;
-		}
-		p.yelow
-		{
-			color: #f1f111;
-		}
-		p.green
-		{
-			color: #11ee11;
-		}
-		p.orange
-		{
-			color: #eebb11;
-		}
-		p.red
-		{
-			color: #ff0000;
-		}
-		#ctxmenu 
-		{
-			position: fixed;
-			background: #490073;
-			color: black;
-			cursor: pointer;
-			border: 1px black solid
-		}
-
-		#ctxmenu > p 
-		{
-			padding: 0 1rem;
-			margin: 0
-		}
-		
-		#ctxmenu > p:hover 
-		{
-		background: #5AD1CB;
-		color: #000000
-		}
 		</style>
 	</head>
 	<body>
 		
 		<h1>Szibaszyn's Page</h1>
-		<p>Blog został przeniesiony</p>
+		<p>żródło WAV dla ducky</p>
 		<div>
 			
-			<h2>Info</h2>
-			<p>Zrobię tu coś innego</p>
-			<span style="text-shadow: 2px 1px 6px rgba(0,147,255,0.8); font-weight: bold; color: #00ff00">Szibaszyn</span>
+			<h2>WAV:</h2>
+			<p>...</p>
 			
 		</div>
 	</body>
