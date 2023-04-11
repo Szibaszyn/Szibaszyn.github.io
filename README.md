@@ -1,4 +1,4 @@
-# Szibaszyn.github.io
+# szibaszyn.github.io
 
 
-Hi, I'm only make my website!
+I'm making website!
