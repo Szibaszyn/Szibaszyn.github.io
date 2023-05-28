@@ -1,4 +1,3 @@
 # szibaszyn.github.io
 
-
-I'm making website!
+Narazie jest to gratownik... XD
