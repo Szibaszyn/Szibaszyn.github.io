@@ -1,3 +1,3 @@
 # szibaszyn.github.io
 
-Narazie jest to gratownik... XD
+Powoli sprawa się prostuje
