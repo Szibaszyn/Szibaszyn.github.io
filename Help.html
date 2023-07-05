@@ -1,0 +1,927 @@
+<!--<link rel="icon" href="cosxd.png">-->
+<!--background-image: url('bg.png');-->
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Szibaszyn's Page</title>
+	<meta charset="UTF-8">
+    <script>
+        oncontextmenu = (e) => {
+		e.preventDefault()
+		let menu = document.createElement("div")
+		menu.id = "ctxmenu"
+		menu.style = `top:${e.pageY-10}px;left:${e.pageX-40}px`
+		menu.onmouseleave = () => ctxmenu.outerHTML = ''
+		menu.innerHTML = "<p>↓Fajny komiks↓</p><p><a href='https://realitybreak.eu/' target='_blank'>Reality Break</a></p><p>------------------------</p><p onclick='alert(`Hejka!`)'>=>Cześć</p>"
+		document.body.appendChild(menu)
+        }
+    </script>
+	<style>
+		body
+		{
+		    background-color: #000000;
+            font-family: Verdana, sans-serif; margin:0
+		}
+		p
+        {
+            color: #aaaaaa;
+        }
+        h1
+        {
+            color: #5AD1CB;
+            background-color: #490073;
+        }
+        h2
+        {
+            color: #5AD1CB;
+            background-color: #490073;
+        }
+        h3
+        {
+            color: #5AD1CB;
+            background-color: #490073;
+        }
+        marquee
+        {
+            color: #5AD1CB
+        }
+        div.main
+        {
+            margin-left: 150px;
+			margin-right: 150px;
+        }
+        #ctxmenu 
+		{
+			position: fixed;
+			background: #490073;
+			color: black;
+			cursor: pointer;
+			border: 1px black solid
+		}
+
+		#ctxmenu > p 
+		{
+			padding: 0 1rem;
+			margin: 0
+		}
+		
+		#ctxmenu > p:hover 
+		{
+		background: #5AD1CB;
+		color: #000000
+		}
+	</style>
+	</head>
+	<body>
+		<marquee behavior="scroll" bgcolor="#490073" direction="left" scrollamount="15">Strona główna</marquee>
+        <div class="main">
+            <h1>Szibaszyn's Page</h1>
+            <p>Witaj na mojej stronie</p>
+            <h2>Prezentacje:</h2>
+            <p>Tu znajdują się prezentacje</p>
+            <h3>EDB:</h3>
+            <a href=edb/edb.html>Prezentacja EDB</a>
+            <h3>Geografia:</h3>
+            <a href=geo/geo.html>Prezentacja Geografia</a>
+            <h3>Polski:</h3>
+            <a href=pol/pol.html>Prezentacja Polski</a>
+        </div>
+		
+	</body>
+</html> 
+<!DOCTYPE html>
+<html oncontextmenu="return false">
+	<head>
+	<title>Prezentacja</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+        p
+		{
+		  color: #aaaaaa;
+		}
+		body
+		{
+		  background-color: #000000;
+		}
+		* {box-sizing: border-box}
+		  body {font-family: Verdana, sans-serif; margin:0}
+		  .mySlides {display: none}
+		  img {vertical-align: middle;}
+		.slideshow-container {
+		  max-width: 1000px;
+		  position: relative;
+		  margin: auto;
+		}
+		.prev, .next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -22px;
+		  color: #7c19b5;
+		  font-weight: bold;
+		  font-size: 18px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		}
+		.next {
+		  right: 0;
+ 		  border-radius: 3px 0 0 3px;
+		}
+		.prev:hover, .next:hover {
+ 		  background-color: rgba(118,156,154,0.7);
+		}
+		.text {
+		  color: #f2f2f2;
+		  font-size: 15px;
+		  padding: 8px 12px;
+ 		 position: absolute;
+ 		 bottom: 8px;
+		  width: 100%;
+ 		 text-align: center;
+		}
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+		}
+		.dot {
+		  cursor: pointer;
+		  height: 15px;
+		  width: 15px;
+ 		  margin: 0 2px;
+		  background-color: #490073;
+		  border-radius: 50%;
+  		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+		.active, .dot:hover {
+ 		 background-color: #5AD1CB;
+		}
+		.fade {
+		  animation-name: fade;
+ 		  animation-duration: 1.5s;
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+		@media only screen and (max-width: 300px) {
+		  .prev, .next,.text {font-size: 11px}
+		}
+		h2
+        {
+            color: #5AD1CB;
+            background-color: #490073;
+        }
+        h1
+        {
+            color: #5AD1CB;
+            background-color: #490073;
+        }
+		audio::-webkit-media-controls-panel {
+ 			background-color: #490073;
+		}
+		audio::-webkit-media-controls-play-button {
+  			background-color: #5AD1CB;
+  			border-radius: 50%;
+		}
+		audio::-webkit-media-controls-play-button:hover {
+  			background-color: #3EB5AF;
+		}
+		audio::-webkit-media-controls-time-remaining-display {
+  			color: #fff;
+		}
+		audio::-webkit-media-controls-current-time-display {
+  			color: #fff;
+		}
+		audio::-webkit-media-controls-timeline {
+  			background-color: #5AD1CB;
+  			border-radius: 25px;
+  			margin-left: 10px;
+  			margin-right: 10px;
+		}
+		div.main
+        {
+            margin-left: 150px;
+			margin-right: 150px;
+        }
+		h3
+        {
+            color: #5AD1CB;
+            background-color: #490073;
+        }
+		.black
+		{
+			color: #000000;
+		}
+        div.cent {
+		text-align: center;
+		}
+		::-webkit-scrollbar {
+		  width: 5px;
+		}
+		::-webkit-scrollbar-track {
+		  background: #490073; 
+		}
+		::-webkit-scrollbar-thumb {
+		  background: #5AD1CB; 
+		  border-radius: 10%;
+		}
+		::-webkit-scrollbar-thumb:hover {
+		  background: #3AB1AB; 
+		}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+}
+
+.box {
+  background-color: transparent;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+  transform-style: preserve-3d;
+  perspective: 2000px;
+  transition: 0.1s;
+  text-align: center;
+}
+.box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-top: 20px solid #fff;
+  border-left: 20px solid #fff;
+  box-sizing: border-box;
+}
+.box:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 20px solid #fff;
+  border-right: 20px solid #fff;
+  box-sizing: border-box;
+}
+.box .fas {
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px !important;
+  background-color: #fff;
+  color: #2C3A47;
+}
+.box .fa2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.box .text {
+  position: absolute;
+  top: 30px;
+  left: -30px;
+  width: calc(100% + 60px);
+  height: calc(100% - 60px);
+  background-color: #2C3A47;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.box .text .fa1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.box .text div {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+  padding: 30px 60px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+.box .text div h3 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.box .text div p {
+  font-size: 15px;
+}
+.box:hover {
+  transform: translate(-50%, -50%) rotateY(-20deg) skewY(3deg);
+}
+.box:hover .text {
+  transform: rotateY(20deg) skewY(-3deg);
+}
+
+	</style>
+	</head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"><link rel="stylesheet" href="./style.css">
+	<body>
+		<font color="#5AD1CB">
+		<marquee behavior="scroll" bgcolor="#490073" direction="left" scrollamount="15">Prezentacja - Polski (Olga Tokarczuk) ===>Autor: Antoni Barnaś<===</marquee>
+		</font>
+		<a href=../index.html>❮ Wróć</a>
+		<div class="main">
+		<h1>Olga Tokarczuk</h1>
+        <h2>Polska noblistka</h2>
+		<div class="cent">
+		<p>Przemowa:</p>
+		</div>
+		</div>
+        <div class="cent">
+		
+		</div>
+        <div class="main">
+        <p>Olga Nawoja Tokarczuk (ur. 29 stycznia 1962 w Sulechowie) – polska pisarka, eseistka, poetka i autorka scenariuszy, psychoterapeutka, laureatka Nagrody Nobla w dziedzinie literatury za rok 2018, laureatka The Man Booker International Prize 2018 za powieść Bieguni oraz dwukrotna laureatka Nagrody Literackiej „Nike” za powieści: Bieguni (2008) i Księgi Jakubowe (2015).</p>
+        <h2>Wybrane Dzieła</h2>
+        <div class="slideshow-container">
+			
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 6</div>
+		  <img src="1.jpg" style="width:100%">
+		  <div class="text">Podróz ludzi ksiegi - 1993 & Prawiek i inne czasy - 1996</div>
+		</div>
+			
+		<div class="mySlides fade">
+  		  <div class="numbertext">4 / 6</div>
+  		  <img src="2.jpg" style="width:100%">
+  		  <div class="text">Dom dzienny dom nocny - 1998 & Anna in w grobowcach swiata - 2006</div>
+		</div>
+
+        <div class="mySlides fade">
+  		  <div class="numbertext">6 / 6</div>
+  		  <img src="3.jpg" style="width:100%">
+  		  <div class="text">Bieguni - 2007 & Prowadź swoj pług przez kosci umarlych - 2009</div>
+		</div>
+		
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+		</div>
+		<br>
+		
+		<div style="text-align:center">
+ 		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+
+		<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+ 		   dots[i].className = dots[i].className.replace(" active", "");
+ 		 }
+ 		   slides[slideIndex-1].style.display = "block";  
+		   dots[slideIndex-1].className += " active";
+		 }
+		</script>
+        <h2>Ciekawostki</h2>
+        <p>28 stycznia 2010 roku została odznaczona przez Ministra Kultury Bogdana Zdrojewskiego Srebrnym Medalem Zasłużony Kulturze - Gloria Artis.</p>
+        <hr>
+        <p>W 2019 roku otrzymała honorowe obywatelstwo miasta Wrocław (Polska).</p>
+        <hr>
+        <p>Pisarka jest pomysłodawczynią i organizatorem Festiwalu Opowiadań, organizowanych od 2004 r. we Wrocławiu i w Jeleniej Górze. Na festiwalu tym pisarze z różnych stron świata prezentują swoje utwory.</p>
+        <hr>
+        <p>W 2020 otrzymała honorowe obywatelstwo miasta stołecznego Warszawy (Polska). </p>
+        <hr>
+        <p>W maju 2008 roku za powieść "Bieguni" zdobyła nagrodę miesięcznika "Odra", a we wrześniu nagrodę internautów, która towarzyszyła pierwszej edycji Nagrody Mediów Publicznych Cogito.</p>
+        <hr>
+        <p>Otrzymała literacką nagrodę Nobla za rok 2018.</p>
+        <hr>
+        <p>W 2014 roku była jurorką Konkursu Głównego Festiwalu Filmowego w Gdyni.</p>
+        <hr>
+        <p>Za powieść "Bieguni" otrzymała w roku 2008 literacką Nagrodę Nike. Wcześniej była trzykrotnie nominowana do tej nagrody i czterokrotnie otrzymała Nagrodę Czytelników.</p>
+        <hr>
+        <p>Ukończyła psychologię na Uniwersytecie Warszawskim w Warszawie (Polska).</p>
+        <hr>
+        <p>Zdobyła dotychczas aż pięć nagród specjalnych Nike, przyznawanych przez czytelników: w 1997 roku za "Prawiek i inne czasy", w 1999 roku za "Dom dzienny, dom nocny", w 2002 r. za "Grę na wielu bębenkach", w 2008 roku za "Biegunów" i w 2015 r. za "Księgi Jakubowe".</p>
+        <hr>
+        <p>W 2012 roku wzięła udział w kampanii społecznej Klubu Gaja "Jeszcze żywy karp"- aby nie kupować na święta żywych ryb i promującą humanitarne traktowanie karpi.</p>
+        <hr>
+        <p>Olga Tokarczuk zdobyła wiele nagród literackich, m.in. nagrodę Polskiego Towarzystwa Wydawców Książek, nagrodę Fundacji Kościelskich i Paszport Polityki (1997) oraz kilka nominacji do nagrody Nike.</p>
+		<div class="box"><i class="fas fa-quote-left fa2"></i>
+  			<div class="text"><i class="fas fa-quote-right fa1"></i>
+    			<div>
+      				<h4>Kto się zatrzyma – skamienieje, kto przystanie, zostanie przyszpilony.</h4>
+      				<p>- Olga Tokarczuk, Bieguni</p>
+    			</div>
+  			</div>
+		</div>
+
+		<h3>Źródła:</h3>
+		<a href=https://pl.wikipedia.org/wiki/Olga_Tokarczuk>Wikipedia</a>
+		<br>
+        <a href=https://www.empik.com/szukaj/produkt?q=tokarczuk%20olga&qtype=basicForm&ac=true>Empik</a>
+		<br>
+        <a href=https://www.filmweb.pl/person/Olga+Tokarczuk-117200/trivia>Filmweb</a>
+        <h3>Autor:</h3>
+		<span style="text-shadow: 2px 1px 6px rgba(0,0,255,0.8); font-weight: bold; color: #ee00cc">Antoni Barnaś</span>
+		<br><br><br>
+		</div>
+	</body>
+</html> 
+<!DOCTYPE html>
+<html oncontextmenu="return false">
+	<head>
+	<link rel="icon" href="img.png">
+	<title>Prezentacja</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		p
+		{
+			color: #000000;
+		}
+		body
+		{
+		  //background-color: #fff8f0;
+          font-family: Verdana, sans-serif margin:0;
+		  background-image: url('bg.png');
+		}
+        h1
+        {
+            color: #d21034;
+            background-color: #005293;
+        }
+		h2
+        {
+            color: #d21034;
+            background-color: #005293;
+        }
+		audio::-webkit-media-controls-panel {
+ 			background-color: #d21034;
+		}
+		audio::-webkit-media-controls-play-button {
+  			background-color: #005293;
+  			border-radius: 50%;
+		}
+		audio::-webkit-media-controls-time-remaining-display {
+  			color: #fff8f0;
+		}
+		audio::-webkit-media-controls-current-time-display {
+  			color: #fff8f0;
+		}
+		audio::-webkit-media-controls-timeline {
+  			background-color: #005293;
+  			border-radius: 25px;
+  			margin-left: 10px;
+  			margin-right: 10px;
+		}
+		div.main
+        {
+            margin-left: 150px;
+			margin-right: 150px;
+        }
+		h3
+        {
+            color: #d21034;
+            background-color: #005293;
+        }
+		.black
+		{
+			color: #000000;
+		}
+		* {box-sizing: border-box}
+		  body {font-family: Verdana, sans-serif; margin:0}
+		  .mySlides {display: none}
+		  img {vertical-align: middle;}
+		.slideshow-container {
+		  max-width: 1000px;
+		  position: relative;
+		  margin: auto;
+		}
+		.prev, .next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -22px;
+		  color: #005293;
+		  font-weight: bold;
+		  font-size: 18px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		}
+		.next {
+		  right: 0;
+ 		  border-radius: 3px 0 0 3px;
+		}
+		.prev:hover, .next:hover {
+ 		  background-color: #d21034;
+		}
+		.text {
+		  color: #f2f2f2;
+		  font-size: 15px;
+		  padding: 8px 12px;
+ 		 position: absolute;
+ 		 bottom: 8px;
+		  width: 100%;
+ 		 text-align: center;
+		}
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+		}
+		.dot {
+		  cursor: pointer;
+		  height: 15px;
+		  width: 15px;
+ 		  margin: 0 2px;
+		  background-color: #005293;
+		  border-radius: 50%;
+  		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+		.active, .dot:hover {
+ 		 background-color: #d21034;
+		}
+		.fade {
+		  animation-name: fade;
+ 		  animation-duration: 1.5s;
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+		@media only screen and (max-width: 300px) {
+		  .prev, .next,.text {font-size: 11px}
+		}
+		div.cent {
+		text-align: center;
+		}
+		
+	</style>
+	</head>
+	<body>
+		<font color="#5AD1CB">
+		<marquee behavior="scroll" bgcolor="#490073" direction="left" scrollamount="15">Prezentacja - Geografia (Panama) ===>Autor: Antoni Barnaś<===</marquee>
+		</font>
+		<a href=../index.html>❮ Wróć</a>
+		<div class="main">
+		<h1>Ameryka</h1>
+        <h2>Panama</h2>
+		<div class="cent">
+        <img src="Flag.png">
+        <img src="Godlo.png">
+		<p>Hymn:</p>
+		<audio controls>
+  			<source src="https://github.com/Szibaszyn/Szibaszyn.github.io/raw/main/Panama_National_Anthem.ogg" type="audio/mpeg">
+		</audio>
+		</div>
+		<p>Panama, Republika Panamy (hiszp. Panamá, República de Panamá) – państwo w Ameryce Centralnej, położone na Przesmyku Panamskim, łączącym Amerykę Północną i Południową, pomiędzy Morzem Karaibskim na północy a Oceanem Spokojnym na południu. Graniczy z Kostaryką na zachodzie i Kolumbią na wschodzie. Powierzchnia kraju wynosi 75 420 km², a liczba ludności – 3 928 646 (2021). Stolicą i największym miastem jest miasto Panama. Panama jest republiką z systemem prezydenckim. Językiem urzędowym jest hiszpański. Panama uzyskała niepodległość w 1903 roku od Kolumbii, z którą związana była od 1821 roku, wcześniej – kolonia hiszpańska. Kanał Panamski, zbudowany w latach 1904–1914, jest jedną z najważniejszych dróg morskich świata. Jego budowa znacznie skróciła czas żeglugi między wschodnim wybrzeżem Ameryki i Europą a zachodnim wybrzeżem Ameryki i Azją Wschodnią, która wcześniej musiała się odbywać wokół Ameryki Południowej. Do 1979 roku kontrolę nad kanałem oraz otaczającą go Strefą Kanału Panamskiego sprawowały Stany Zjednoczone, następnie do 1999 roku znajdował się on pod wspólną administracją amerykańsko-panamską, a obecnie pod wyłączną jurysdykcją Panamy. Gospodarka Panamy w ponad 3/4 opiera się na sektorze usług i należy do najszybciej rozwijających się w Ameryce Łacińskiej. Pomimo znacznych nakładów na programy socjalne kraj cechuje się wysokim poziomem nierówności społecznych, a niemal 1/4 społeczeństwa żyje w ubóstwie.</p>
+        <h2>Geografia</h2>
+        <p>Terytorium Panamy stanowi wąski (od ok. 50 km do ok. 200 km) pas lądu, łączący Amerykę Południową z Ameryką Północną. W najwęższej części, zwanej Przesmykiem Panamskim, znajduje się Kanał Panamski. Ponad 50% pow. kraju zajmują wyżyny i góry Kordyliery Środkowej. Na zachodzie Cordillera de Veraguas z licznymi stożkami wulkanów (m.in. Chiriquí, najwyższy szczyt kraju, 3478 m n.p.m.), na wschodzie – Serranía del Darién (wys. do ok. 1900 m n.p.m.). Na wybrzeżach – aluwialne niziny. Wybrzeża rozczłonkowane (łączna dł. ok. 2000 km). Liczne zatoki, największe: Panamska (Ocean Spokojny) i Moskitów (Morze Karaibskie). Wzdłuż wybrzeży rafy koralowe (zwł. na Morzu Karaibskim) i ok. 1600 wysp (m.in. Wyspy Perłowe na Oceanie Spokojnym). Obszar Panamy jest położony w strefie aktywnej sejsmicznie. Klimat równikowy, na północy wybitnie wilgotny (opady całoroczne, do 4000 mm), na południu wilgotny (opady głównie w półroczu letnim, 1500–2500 mm rocznie). Średnia temperatura miesięczna: 26–28 °C na nizinach i ok. 17–10 °C w górach. Na wybrzeżu Morza Karaibskiego częste burze (do 200 rocznie). Gęsta sieć krótkich rzek, wpadających głównie do Oceanu Spokojnego. Lasy (44% pow.) równikowe wilgotne na północy i zrzucające okresowo liście – na południu oraz namorzynowe – na wybrzeżu Morza Karaibskiego. W kotlinach roślinność sawannowa. Panama graniczy z Kolumbią (339 km) i Kostaryką (348 km) – łączna długość granic lądowych wynosi 687 km.</p>
+        <h2>Historia</h2>
+        <p>Obszar zasiedlony pierwotnie przez Indian, głównie Czibczów. Do podboju hiszpańskiego znajdował się w zasięgu handlu prowadzonego przez Azteków i Majów. Przez Europejczyków odkryty ok. 1501, stał się posiadłością hiszpańską. Od 1535 wchodził w skład wicekrólestwa Nowej Hiszpanii, od 1717 – wicekrólestwa Nowej Granady. Przez cały okres kolonialny był centrum wymiany handlowej. Po wyzwoleniu spod panowania hiszpańskiego Nowej Granady 1819, Panama, jako jej prowincja, weszła w skład Wielkiej Kolumbii. Od 1830 należała do Kolumbii. Znaczenie Panamy wzrosło z chwilą wybudowania (1850–1855) kolei łączącej Ocean Spokojny z Morzem Karaibskim, a zwłaszcza w związku z budową (od 1881) Kanału Panamskiego. W latach 1855–1886 dysponowała autonomią którą utraciła na skutek dążeń secesjonistycznych. W 1903 z inspiracji USA oderwała się od Kolumbii (na czele ruchu separatystycznego stał Manuel Amador Guerrero) i utworzyła odrębną republikę. Traktat z 1903 (Hay–Bunau-Varilla) przyznał USA wieczystą dzierżawę Strefy Kanału Panamskiego i prawo stacjonowania na terenie Panamy wojsk amerykańskich[6]. W następnych latach rozwój gospodarki był związany z Kanałem, na prowincji tradycyjna gospodarka rolna (głównie uprawa bananów). Pierwszy prezydent kraju Manuel Amador Guerrero wywodzący się z Partii Konserwatywnej przeprowadził szereg reform społecznych, lecz mocno uzależnił Panamę od Stanów Zjednoczonych. USA korzystając z wpływów w Panamie dokonało kilkukrotnie zbrojnej interwencji w wewnętrzne sprawy państwa. Do interwencji wojsk amerykańskich doszło w latach 1908, 1910 i 1918–1919. W latach 30. wystąpiły konflikty społeczne na tle rasowym. Na czele ruchu nacjonalistycznego i antyamerykańskiego stanął Arnulfo Arias Madrid. W 1936 roku rząd panamski podpisał traktat przedłużający amerykańskie wpływy w Panamie zagwarantowane w trakcie z 1903. W 1940 roku wybory prezydenckie wygrał Arias który już rok później obalony został w wyniku puczu wojskowego. Krótka prezydentura Ariasa charakteryzowała się antyamerykanizmem oraz prowłoską i proniemiecką polityką[7]. Pucz przywrócił w kraju proamerykańskie rządy. Podczas II wojny światowej na terenie Panamy utworzono amerykańskie bazy wojskowe.</p>
+        <h2>Ustrój polityczny</h2>
+        <p>Panama jest republiką, konstytucja została uchwalona w 1972 r., a znowelizowana w 1983 r. Głową państwa i szefem rządu jest prezydent, wybierany w wyborach powszechnych na 5-letnią kadencję. Władzę ustawodawczą sprawuje jednoizbowe, 78-osobowe Zgromadzenie Ustawodawcze, wybierane w wyborach powszechnych na 5-letnią kadencję. Władzę wykonawczą sprawuje rząd powoływany przez prezydenta i przed nim odpowiedzialny.</p>
+        <h2>Siły zbrojne</h2>
+        <p>Panama dysponuje trzema rodzajami sił zbrojnych: wojskami lądowymi, marynarką wojenną oraz siłami powietrznymi, które służą jej wyłącznie do samoobrony[19]. Uzbrojenie sił lądowych Panamy składało się w 2014 roku z 65 opancerzonych pojazdów bojowych, a marynarka wojenna dysponowała ośmioma okrętami obrony przybrzeża. Panamskie siły powietrzne z kolei posiadały w 2014 roku uzbrojenie w postaci m.in. 15 samolotów transportowych, czterech samolotów szkolno-bojowych oraz 10 śmigłowców.</p>
+        <h2>Ludność</h2>
+        <p>Około 65% ludności Panamy stanowią Metysi, czyli potomkowie Indian i białych, Indianie 12,5% skupieni głównie na wybrzeżu Morza Karaibskiego, m.in. w Comarca de San Blas (autonomiczne terytorium Kuna Yala, należące do Indian Kuna), czarni 9,2%, Mulaci 6,8% natomiast biali 6,7%.</p>
+        <div class="cent">
+		<img src="demog.png">
+		</div>
+        <h3>Zdjęcia:</h3>
+		<div class="slideshow-container">
+			
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 4</div>
+		  <img src="1.jpg" style="width:100%">
+		  <div class="text">Isla de Pelicano</div>
+		</div>
+			
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 4</div>
+		  <img src="2.jpg" style="width:100%">
+		  <div class="text">Cayos Holandeses</div>
+		</div>
+			
+		<div class="mySlides fade">
+  		  <div class="numbertext">3 / 4</div>
+  		  <img src="3.jpg" style="width:100%">
+  		  <div class="text">Panama City</div>
+		</div>
+			
+		<div class="mySlides fade">
+		  <div class="numbertext">4 / 4</div>
+		  <img src="4.jpg" style="width:100%">
+		  <div class="text">San Blas</div>
+		</div>
+		
+		
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+		</div>
+		<br>
+		
+		<div style="text-align:center">
+ 		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		  <span class="dot" onclick="currentSlide(4)"></span> 
+		</div>
+
+		<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+ 		   dots[i].className = dots[i].className.replace(" active", "");
+ 		 }
+ 		   slides[slideIndex-1].style.display = "block";  
+		   dots[slideIndex-1].className += " active";
+		 }
+		</script>
+		<h3>Źródła:</h3>
+		<a href=https://pl.wikipedia.org/wiki/Panama>Wikipedia</a>
+		<br>
+		<a href=https://www.globtroter.pl/zdjecia/kraj/399,panama.html>Globtroter</a>
+		<h3>Autor:</h3>
+		<span style="text-shadow: 2px 1px 6px rgba(0,0,255,0.8); font-weight: bold; color: #ee00cc">Antoni Barnaś</span>
+		<br><br><br>
+		</div>
+	</body>
+</html> 
+<!DOCTYPE html>
+<html oncontextmenu="return false">
+	<head>
+	<title>Prezentacja</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		p
+		{
+			color: #aaaaaa;
+		}
+		body
+		{
+		  background-color: #000000;
+		}
+		* {box-sizing: border-box}
+		  body {font-family: Verdana, sans-serif; margin:0}
+		  .mySlides {display: none}
+		  img {vertical-align: middle;}
+		.slideshow-container {
+		  max-width: 1000px;
+		  position: relative;
+		  margin: auto;
+		}
+		.prev, .next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -22px;
+		  color: #7c19b5;
+		  font-weight: bold;
+		  font-size: 18px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		}
+		.next {
+		  right: 0;
+ 		  border-radius: 3px 0 0 3px;
+		}
+		.prev:hover, .next:hover {
+ 		  background-color: rgba(118,156,154,0.7);
+		}
+		.text {
+		  color: #f2f2f2;
+		  font-size: 15px;
+		  padding: 8px 12px;
+ 		 position: absolute;
+ 		 bottom: 8px;
+		  width: 100%;
+ 		 text-align: center;
+		}
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+		}
+		.dot {
+		  cursor: pointer;
+		  height: 15px;
+		  width: 15px;
+ 		  margin: 0 2px;
+		  background-color: #490073;
+		  border-radius: 50%;
+  		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+		.active, .dot:hover {
+ 		 background-color: #5AD1CB;
+		}
+		.fade {
+		  animation-name: fade;
+ 		  animation-duration: 1.5s;
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+		@media only screen and (max-width: 300px) {
+		  .prev, .next,.text {font-size: 11px}
+		}
+		h2
+        {
+            color: #5AD1CB;
+            background-color: #490073;
+        }
+		audio::-webkit-media-controls-panel {
+ 			background-color: #490073;
+		}
+		audio::-webkit-media-controls-play-button {
+  			background-color: #5AD1CB;
+  			border-radius: 50%;
+		}
+		audio::-webkit-media-controls-play-button:hover {
+  			background-color: #3EB5AF;
+		}
+		audio::-webkit-media-controls-time-remaining-display {
+  			color: #fff;
+		}
+		audio::-webkit-media-controls-current-time-display {
+  			color: #fff;
+		}
+		audio::-webkit-media-controls-timeline {
+  			background-color: #5AD1CB;
+  			border-radius: 25px;
+  			margin-left: 10px;
+  			margin-right: 10px;
+		}
+		div.main
+        {
+            margin-left: 150px;
+			margin-right: 150px;
+        }
+		h3
+        {
+            color: #5AD1CB;
+            background-color: #490073;
+        }
+		.black
+		{
+			color: #000000;
+		}
+	</style>
+	</head>
+	<body>
+		<font color="#5AD1CB">
+		<marquee behavior="scroll" bgcolor="#490073" direction="left" scrollamount="15">Prezentacja - EDB (Kod Morse'a) ===>Autor: Antoni Barnaś<===</marquee>
+		</font>
+		<a href=../index.html>❮ Wróć</a>
+		<div class="slideshow-container">
+			
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 4</div>
+		  <img src="1.png" style="width:100%">
+		  <div class="text">Początek</div>
+		</div>
+			
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 4</div>
+		  <img src="2.png" style="width:100%">
+		  <div class="text">Kod Morse'a</div>
+		</div>
+			
+		<div class="mySlides fade">
+  		  <div class="numbertext">3 / 4</div>
+  		  <img src="3.png" style="width:100%">
+  		  <div class="text">Zasady</div>
+		</div>
+			
+		<div class="mySlides fade">
+		  <div class="numbertext">4 / 4</div>
+		  <img src="4.png" style="width:100%">
+		  <div class="text">Klucze</div>
+		</div>
+		
+		
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+		</div>
+		<br>
+		
+		<div style="text-align:center">
+ 		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		  <span class="dot" onclick="currentSlide(4)"></span> 
+		</div>
+
+		<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+ 		   dots[i].className = dots[i].className.replace(" active", "");
+ 		 }
+ 		   slides[slideIndex-1].style.display = "block";  
+		   dots[slideIndex-1].className += " active";
+		 }
+		</script>
+		<div class="main">
+		<h2>Ciekawostka</h2>
+		<p>Jako ciekawostka chcę zaznaczyć że PKP posiada tkazwany RADIO-STOP – system zabezpieczenia ruchu kolejowego. System umożliwia zatrzymanie będących w ruchu pojazdów trakcyjnych w miejscu, gdzie zachodzi zagrożenie dla bezpieczeństwa ruchu. Lecz niemałym defektem jest to że sygnał radiostopu odrazu po otrzymaniu przez parowóz włącza hamulec hydrauliczny oraz sygnal jest ogólnodostępny w internecie i że każdy posiadający najprostrzy Radiotelefon (ceny zaczynają się od około 100zł np. Pni p15uv) i Smartphona z wgranym sygnałem jest wstanie prawie "bezkarnie" wysłać sygnał na określoną częstotliwość i zatrzymać pociągi w pobliżu. Bezkarnie ponieważ czas nadania jest zakrótki żeby UKE (Urząd Komunikacji Elektronicznej) był w stanie wykryć skąd jest nadawany sygnał.</p>
+		<h3>Pliki:</h3>
+		<p>Sygnał:</p>
+		<audio controls>
+  			<source src="https://github.com/Szibaszyn/Szibaszyn.github.io/raw/main/ODG%C5%81OS%20RADIOSTOP.mp3" type="audio/mpeg">
+		</audio>
+		<p>Częstotliwości:</p>
+		<img src="PKP.png">
+		<p class="black">Aby zatrzymać pociągi w bielsku białej należy nadać ten sygnał na PKP5(150,375 MHz) czyli na ogólnym kanale w Bielsku-Białej</p>
+		</div>
+	</body>
+</html> 
