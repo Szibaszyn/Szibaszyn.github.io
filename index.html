@@ -1,382 +1,147 @@
-<!-- 
-<HTML><HEAD>
-<META HTTP-EQUIV="refresh" CONTENT="1; URL=https://szibaszyn.w3spaces.com/">
-</HEAD></HTML>
-<a href=../index.html>❮ Wróć</a>
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+<h1>Cameras in poland</h1>
+<p>STREAM - 2</p>
+<p>AXIS - 10</p>
+<p>FOSCAM - 1</p>
+<p>ChannelVision - 4</p>
+<hr>
 
-body {
-  background-color: #000000;
-}
-
-.box {
-  background-color: transparent;
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  height: 300px;
-  transform-style: preserve-3d;
-  perspective: 2000px;
-  transition: 0.1s;
-  text-align: center;
-}
-.box:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  border-top: 20px solid #fff;
-  border-left: 20px solid #fff;
-  box-sizing: border-box;
-}
-.box:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-bottom: 20px solid #fff;
-  border-right: 20px solid #fff;
-  box-sizing: border-box;
-}
-.box .fas {
-  font-size: 25px;
-  height: 50px;
-  width: 50px;
-  line-height: 50px !important;
-  background-color: #fff;
-  color: #2C3A47;
-}
-.box .fa2 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-}
-.box .text {
-  position: absolute;
-  top: 30px;
-  left: -30px;
-  width: calc(100% + 60px);
-  height: calc(100% - 60px);
-  background-color: #2C3A47;
-  border-radius: 3px;
-  transition: 0.3s;
-}
-.box .text .fa1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.box .text div {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  text-align: center;
-  width: 100%;
-  padding: 30px 60px;
-  line-height: 1.5;
-  box-sizing: border-box;
-}
-.box .text div h3 {
-  font-size: 30px;
-  margin-bottom: 5px;
-}
-.box .text div p {
-  font-size: 15px;
-}
-.box:hover {
-  transform: translate(-50%, -50%) rotateY(-20deg) skewY(3deg);
-}
-.box:hover .text {
-  transform: rotateY(20deg) skewY(-3deg);
-}
+<!--
+<style>
+	img{
+		width: 200px;
+		height: 200px;
+	}
+</style>
 -->
-<!DOCTYPE html>
-<html oncontextmenu="return false">
-	<head>
-	<title>Prezentacja</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-       		 p
-		{
-		  color: #aaaaaa;
-		}
-		body
-		{
-		  background-color: #000000;
-		}
-		* {box-sizing: border-box}
-		  body {font-family: Verdana, sans-serif; margin:0}
-		  .mySlides {display: none}
-		  img {vertical-align: middle;}
-		.slideshow-container {
-		  max-width: 1000px;
-		  position: relative;
-		  margin: auto;
-		}
-		.prev, .next {
-		  cursor: pointer;
-		  position: absolute;
-		  top: 50%;
-		  width: auto;
-		  padding: 16px;
-		  margin-top: -22px;
-		  color: #7c19b5;
-		  font-weight: bold;
-		  font-size: 18px;
-		  transition: 0.6s ease;
-		  border-radius: 0 3px 3px 0;
-		  user-select: none;
-		}
-		.next {
-		  right: 0;
- 		  border-radius: 3px 0 0 3px;
-		}
-		.prev:hover, .next:hover {
- 		  background-color: rgba(118,156,154,0.7);
-		}
-		.text {
-		  color: #f2f2f2;
-		  font-size: 15px;
-		  padding: 8px 12px;
- 		 position: absolute;
- 		 bottom: 8px;
-		  width: 100%;
- 		 text-align: center;
-		}
-		.numbertext {
-		  color: #f2f2f2;
-		  font-size: 12px;
-		  padding: 8px 12px;
-		  position: absolute;
-		  top: 0;
-		}
-		.dot {
-		  cursor: pointer;
-		  height: 15px;
-		  width: 15px;
- 		  margin: 0 2px;
-		  background-color: #490073;
-		  border-radius: 50%;
-  		  display: inline-block;
-		  transition: background-color 0.6s ease;
-		}
-		.active, .dot:hover {
- 		 background-color: #5AD1CB;
-		}
-		.fade {
-		  animation-name: fade;
- 		  animation-duration: 1.5s;
-		}
 
-		@keyframes fade {
-		  from {opacity: .4} 
-		  to {opacity: 1}
-		}
-		@media only screen and (max-width: 300px) {
-		  .prev, .next,.text {font-size: 11px}
-		}
-		h2
-        	{
-            		color: #5AD1CB;
-            		background-color: #490073;
-        	}
-        	h1
-        	{
-            		color: #5AD1CB;
-            		background-color: #490073;
-        	}
-		audio::-webkit-media-controls-panel {
- 			background-color: #490073;
-		}
-		audio::-webkit-media-controls-play-button {
-  			background-color: #5AD1CB;
-  			border-radius: 50%;
-		}
-		audio::-webkit-media-controls-play-button:hover {
-  			background-color: #3EB5AF;
-		}
-		audio::-webkit-media-controls-time-remaining-display {
-  			color: #fff;
-		}
-		audio::-webkit-media-controls-current-time-display {
-  			color: #fff;
-		}
-		audio::-webkit-media-controls-timeline {
-  			background-color: #5AD1CB;
-  			border-radius: 25px;
-  			margin-left: 10px;
-  			margin-right: 10px;
-		}
-		div.main
-        	{
-            		margin-left: 150px;
-			margin-right: 150px;
-       		 }
-		h3
-        	{
-           		 color: #5AD1CB;
-            		background-color: #490073;
-        	}
-		.black
-		{
-			color: #000000;
-		}
-        	div.cent {
-			text-align: center;
-		}
-		::-webkit-scrollbar {
-		  	width: 5px;
-		}
-		::-webkit-scrollbar-track {
-		  	background: #490073; 
-		}
-		::-webkit-scrollbar-thumb {
-		  	background: #5AD1CB; 
-		}
-		::-webkit-scrollbar-thumb:hover {
-		  	background: #3AB1AB; 
-		}
-	</style>
-	</head>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"><link rel="stylesheet" href="./style.css">
-	<body>
-	<font color="#5AD1CB">
-	<marquee behavior="scroll" bgcolor="#490073" direction="left" scrollamount="15">Prezentacja - Polski (Olga Tokarczuk) ===>Autor: Antoni Barnaś<===</marquee>
-	</font>
-	<div class="main">
-	<h1>Olga Tokarczuk</h1>
-        <h2>Polska noblistka</h2>
-	<div class="cent">
-	<p>Przemowa:</p>
-	</div>
-	</div>
-        <div class="cent">
-	<iframe width="1244" height="700" src="https://www.youtube.com/embed/VvZAXL28K2E" title="Nobel Lecture: Olga Tokarczuk, Nobel Prize in Literature 2018" frameborder="0" >
-        </iframe>
-	</div>
-        <div class="main">
-        <p>Olga Nawoja Tokarczuk (ur. 29 stycznia 1962 w Sulechowie) – polska pisarka, eseistka, poetka i autorka scenariuszy, psychoterapeutka, laureatka Nagrody Nobla w dziedzinie literatury za rok 2018, laureatka The Man Booker International Prize 2018 za powieść Bieguni oraz dwukrotna laureatka Nagrody Literackiej „Nike” za powieści: Bieguni (2008) i Księgi Jakubowe (2015).</p>
-        <h2>Wybrane Dzieła</h2>
-        <div class="slideshow-container">
-			
-		<div class="mySlides fade">
-		  <div class="numbertext">2 / 6</div>
-		  <img src="1.jpg" style="width:100%">
-		  <div class="text">Podróz ludzi ksiegi - 1993 & Prawiek i inne czasy - 1996</div>
-		</div>
-			
-		<div class="mySlides fade">
-  		  <div class="numbertext">4 / 6</div>
-  		  <img src="2.jpg" style="width:100%">
-  		  <div class="text">Dom dzienny dom nocny - 1998 & Anna in w grobowcach swiata - 2006</div>
-		</div>
+<div class="cam_stream">
+	<img class="16_9" src="http://185.48.130.75:8090/?action=stream">
+	STREAM
+</div>
 
-        	<div class="mySlides fade">
-  		  <div class="numbertext">6 / 6</div>
-  		  <img src="3.jpg" style="width:100%">
-  		  <div class="text">Bieguni - 2007 & Prowadź swoj pług przez kosci umarlych - 2009</div>
-		</div>
-		
-		<a class="prev" onclick="plusSlides(-1)">❮</a>
-		<a class="next" onclick="plusSlides(1)">❯</a>
-		</div>
-		<br>
-		
-		<div style="text-align:center">
- 		  <span class="dot" onclick="currentSlide(1)"></span> 
-		  <span class="dot" onclick="currentSlide(2)"></span> 
-		  <span class="dot" onclick="currentSlide(3)"></span> 
-		</div>
+<div class="cam_stream">
+	<img class="4_3" src="http://5.185.26.220:8080/?action=stream">
+	STREAM
+</div>
 
-		<script>
-		let slideIndex = 1;
-		showSlides(slideIndex);
+<div class="cam_axis">
+	<img class="4_3" src="http://85.202.156.79:80/mjpg/video.mjpg">
+	AXIS
+</div>
 
-		function plusSlides(n) {
-		  showSlides(slideIndex += n);
-		}
+<div class="cam_axis">
+	<img class="16_9" src="http://81.15.242.108:80/mjpg/video.mjpg">
+	AXIS
+</div>
 
-		function currentSlide(n) {
-		  showSlides(slideIndex = n);
-		}
+<div class="cam_axis">
+	<img class="16_9" src="http://46.238.103.4:80/mjpg/video.mjpg">
+	AXIS
+</div>
 
-		function showSlides(n) {
-		  let i;
-		  let slides = document.getElementsByClassName("mySlides");
-		  let dots = document.getElementsByClassName("dot");
-		  if (n > slides.length) {slideIndex = 1}    
-		  if (n < 1) {slideIndex = slides.length}
-		  for (i = 0; i < slides.length; i++) {
-		    slides[i].style.display = "none";  
-		  }
-		  for (i = 0; i < dots.length; i++) {
- 		   dots[i].className = dots[i].className.replace(" active", "");
- 		 }
- 		   slides[slideIndex-1].style.display = "block";  
-		   dots[slideIndex-1].className += " active";
-		 }
-		</script>
-        <h2>Ciekawostki</h2>
-        <p>28 stycznia 2010 roku została odznaczona przez Ministra Kultury Bogdana Zdrojewskiego Srebrnym Medalem Zasłużony Kulturze - Gloria Artis.</p>
-        <hr>
-        <p>W 2019 roku otrzymała honorowe obywatelstwo miasta Wrocław (Polska).</p>
-        <hr>
-        <p>Pisarka jest pomysłodawczynią i organizatorem Festiwalu Opowiadań, organizowanych od 2004 r. we Wrocławiu i w Jeleniej Górze. Na festiwalu tym pisarze z różnych stron świata prezentują swoje utwory.</p>
-        <hr>
-        <p>W 2020 otrzymała honorowe obywatelstwo miasta stołecznego Warszawy (Polska). </p>
-        <hr>
-        <p>W maju 2008 roku za powieść "Bieguni" zdobyła nagrodę miesięcznika "Odra", a we wrześniu nagrodę internautów, która towarzyszyła pierwszej edycji Nagrody Mediów Publicznych Cogito.</p>
-        <hr>
-        <p>Otrzymała literacką nagrodę Nobla za rok 2018.</p>
-        <hr>
-        <p>W 2014 roku była jurorką Konkursu Głównego Festiwalu Filmowego w Gdyni.</p>
-        <hr>
-        <p>Za powieść "Bieguni" otrzymała w roku 2008 literacką Nagrodę Nike. Wcześniej była trzykrotnie nominowana do tej nagrody i czterokrotnie otrzymała Nagrodę Czytelników.</p>
-        <hr>
-        <p>Ukończyła psychologię na Uniwersytecie Warszawskim w Warszawie (Polska).</p>
-        <hr>
-        <p>Zdobyła dotychczas aż pięć nagród specjalnych Nike, przyznawanych przez czytelników: w 1997 roku za "Prawiek i inne czasy", w 1999 roku za "Dom dzienny, dom nocny", w 2002 r. za "Grę na wielu bębenkach", w 2008 roku za "Biegunów" i w 2015 r. za "Księgi Jakubowe".</p>
-        <hr>
-        <p>W 2012 roku wzięła udział w kampanii społecznej Klubu Gaja "Jeszcze żywy karp"- aby nie kupować na święta żywych ryb i promującą humanitarne traktowanie karpi.</p>
-        <hr>
-        <p>Olga Tokarczuk zdobyła wiele nagród literackich, m.in. nagrodę Polskiego Towarzystwa Wydawców Książek, nagrodę Fundacji Kościelskich i Paszport Polityki (1997) oraz kilka nominacji do nagrody Nike.</p>
-		<!--
-		<div class="box"><i class="fas fa-quote-left fa2"></i>
-  			<div class="text"><i class="fas fa-quote-right fa1"></i>
-    			<div>
-      				<h4>Kto się zatrzyma – skamienieje, kto przystanie, zostanie przyszpilony.</h4>
-      				<p>- Olga Tokarczuk, Bieguni</p>
-    			</div>
-  			</div>
-		</div>
-		-->
-	<h2>Bieguni</h2>
-	<p>Książka opisuje historię pewnego Polaka, któremu podczas wakacji w Chorwacji zaginęła żona. Jest tu też opowieść o australijskiej badaczce polskiego pochodzenia, która po wielu latach powraca do kraju, by pomóc przyjacielowi uciec od choroby i bólu poprzez eutanazję.
-	</p>
-	<h3>Źródła:</h3>
-	<a href=https://pl.wikipedia.org/wiki/Olga_Tokarczuk>Wikipedia</a>
-	<br>
-        <a href=https://www.empik.com/szukaj/produkt?q=tokarczuk%20olga&qtype=basicForm&ac=true>Empik</a>
-	<br>
-        <a href=https://www.filmweb.pl/person/Olga+Tokarczuk-117200/trivia>Filmweb</a>
-        <h3>Autor:</h3>
-	<span style="text-shadow: 2px 1px 6px rgba(0,0,255,0.8); font-weight: bold; color: #ee00cc">Antoni Barnaś</span>
-	<br><br><br>
-	</div>
-	</body>
-</html> 
+<div class="cam_foscam">
+	<img class="4_3" src="http://46.171.194.165:8080/videostream.cgi?user=admin&pwd=">
+	FOSCAM
+</div>
+
+<div class="cam_axis">
+	<img class="4_3" src="http://91.231.60.123:8001/mjpg/video.mjpg">
+	AXIS
+</div>
+
+<div class="cam_cv">
+	<img class="4_3" src="http://91.233.113.120:8081/GetData.cgi?CH=1">
+	ChannelVision
+</div>
+
+<div class="cam_cv">
+	<img class="4_3" src="http://91.233.113.120:8082/GetData.cgi?CH=1">
+	ChannelVision
+</div>
+
+<div class="cam_cv">
+	<img class="4_3" src="http://91.233.113.120:8084/GetData.cgi?CH=1">
+	ChannelVision
+</div>
+
+<div class="cam_cv">
+	<img class="4_3" src="http://91.233.113.120:8085/GetData.cgi?CH=1">
+	ChannelVision
+</div>
+
+<div class="cam_axis">
+	<img class="16_9" src="http://80.94.28.252:80/mjpg/video.mjpg">
+	AXIS
+</div>
+
+<div class="grid-container">
+	<video>
+		<source src="http://193.242.215.2:8001/mjpg/video.mjpg">
+		AXIS
+	</video>
+	<img id="image11" src="http://193.242.215.2:8001/mjpg/video.mjpg" class="img-responsive img-rounded detailimage" alt="" >
+	<script>
+		var ch = 11;
+		var imageurls = new Array();
+		imageurls[11] = new String("http://193.242.215.2:8001/mjpg/video.mjpg");
+	</script>
+</div>
+
+<div class="grid-container">
+	<video>
+		<source src="http://78.9.31.140:80/mjpg/video.mjpg">
+		AXIS
+	</video>
+	<img id="image12" src="http://78.9.31.140:80/mjpg/video.mjpg" class="img-responsive img-rounded detailimage" alt="" >
+	<script>
+		var ch = 12;
+		var imageurls = new Array();
+		imageurls[12] = new String("http://78.9.31.140:80/mjpg/video.mjpg");
+	</script>
+</div>
+
+<div class="grid-container">
+	<video>
+		<source src="http://78.9.31.143:80/mjpg/video.mjpg">
+		AXIS
+	</video>
+	<img id="image13" src="http://78.9.31.143:80/mjpg/video.mjpg" class="img-responsive img-rounded detailimage" alt="" >
+	<script>
+		var ch = 13;
+		var imageurls = new Array();
+		imageurls[13] = new String("http://78.9.31.143:80/mjpg/video.mjpg");
+	</script>
+</div>
+
+<div class="grid-container">
+	<video>
+		<source src="http://212.244.210.155:80/mjpg/video.mjpg">
+		AXIS
+	</video>
+	<img id="image14" src="http://212.244.210.155:80/mjpg/video.mjpg" class="img-responsive img-rounded detailimage" alt="" >
+	<script>
+		var ch = 14;
+		var imageurls = new Array();
+		imageurls[14] = new String("http://212.244.210.155:80/mjpg/video.mjpg");
+	</script>
+</div>
+
+<div class="grid-container">
+	<video>
+		<source src="http://81.26.28.141:80/mjpg/video.mjpg">
+		AXIS
+	</video>
+	<img id="image15" src="http://81.26.28.141:80/mjpg/video.mjpg" class="img-responsive img-rounded detailimage" alt="" >
+	<script>
+		var ch = 15;
+		var imageurls = new Array();
+		imageurls[15] = new String("http://81.26.28.141:80/mjpg/video.mjpg");
+	</script>
+</div>
+
+<h1>All Cameras</h1>
+<p>STREAM - 107</p>
+<p>AXIS - 1354</p>
+<p>FOSCAM - 37</p>
+<p>ChannelVision - 60</p>
+<hr>
