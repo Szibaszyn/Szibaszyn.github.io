@@ -1,3 +1,3 @@
 # szibaszyn.github.io
 
-Powoli sprawa się prostuje
+Pov: nudzi ci się i znajdujesz otwarte hosty kamer...
